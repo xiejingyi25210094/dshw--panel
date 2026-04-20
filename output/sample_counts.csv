@@ -1,0 +1,6 @@
+step,N
+1. Initial merged sample,59127
+2. After dropping finance (J),57648
+3. After dropping ST firms,48096
+4. After dropping lev > 1,48095
+5. After dropping missing core vars,43026
