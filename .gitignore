@@ -20,3 +20,8 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+
+# Quarto output
+_site/
+.quarto/
+_freeze/

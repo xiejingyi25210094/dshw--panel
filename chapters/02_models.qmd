@@ -1,0 +1,40 @@
+---
+title: "模型设定"
+format: html
+---
+
+# 基准模型
+
+基准回归采用双向固定效应模型：
+
+$$
+lev_{it} = \alpha + \beta npr_{it} + \gamma X_{it} + \mu_i + \lambda_t + \varepsilon_{it}
+$$
+
+其中 $\mu_i$ 表示企业固定效应，$\lambda_t$ 表示年份固定效应，$X_{it}$ 为控制变量集合。
+
+# 产权性质异质性
+
+为了检验产权性质是否改变利润率与杠杆之间的关系，设置交互项：
+
+$$
+lev_{it} = \alpha + \beta npr_{it} + \delta soe_i + \theta (npr_{it} \times soe_i) + \gamma X_{it} + \mu_i + \lambda_t + \varepsilon_{it}
+$$
+
+# 时间变系数
+
+M4 通过逐年回归观察 $\hat{\beta}_t$ 的变化，检验利润率与杠杆关系是否具有时间稳定性。
+
+# 函数系数与门槛效应
+
+M5 采用交互项构造函数系数：
+
+$$
+lev_{it} = \alpha + \beta_1 npr_{it} + \beta_2 (npr_{it} \times size^c_{it}) + \beta_3 (npr_{it} \times (size^c_{it})^2) + \gamma X_{it} + \mu_i + \lambda_t + \varepsilon_{it}
+$$
+
+M6 使用门槛搜索考察在不同规模区间内 `npr` 的边际效应是否发生变化。
+
+# IFE 模型
+
+IFE 部分加入 M2 增长率，并使用 `regife` 估计互动固定效应，以比较其与 TWFE 的差异。

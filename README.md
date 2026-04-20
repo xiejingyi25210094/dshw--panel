@@ -19,10 +19,13 @@
 - Jupyter Notebook
 
 ### GitHub 仓库
-https://github.com/[组长用户名]/dshw--panel
+https://github.com/xiejingyi25210094/dshw--panel/tree/final
 
 ### Quarto Book（如完成）
-https://[用户名].github.io/dshw--panel/
+- [Quarto Book 源文件](index.qmd)
+- 章节文件位于 [chapters/](chapters/)
+- 渲染命令：`quarto render`
+- GitHub Pages 发布：推送到 `final` 分支后由 GitHub Actions 自动生成站点，发布到 `gh-pages`
 
 ### 主要发现（3-5 条）
 1. M1-M3 的结果整体更接近权衡理论：`npr` 对杠杆的影响为正，但产权性质交互项不显著，说明差异方向存在、证据不强。

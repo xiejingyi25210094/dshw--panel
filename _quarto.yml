@@ -1,0 +1,26 @@
+project:
+  type: book
+  output-dir: _site
+
+book:
+  title: "上市公司资本结构影响因素分析"
+  author: "谢婧怡"
+  repo-url: "https://github.com/xiejingyi25210094/dshw--panel"
+  repo-branch: final
+  chapters:
+    - index.qmd
+    - chapters/01_data.qmd
+    - chapters/02_models.qmd
+    - chapters/03_results.qmd
+    - chapters/04_conclusion.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+    code-fold: true
+    code-tools: true
+
+execute:
+  freeze: auto

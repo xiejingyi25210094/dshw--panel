@@ -1,0 +1,22 @@
+---
+title: "上市公司资本结构影响因素分析"
+subtitle: "基于 A 股上市公司面板数据的课程作业"
+format: html
+---
+
+# 项目简介
+
+本项目使用 Stata 对 A 股上市公司资本结构影响因素进行实证分析，依次完成了数据清洗、样本筛选、描述统计、双向固定效应回归、产权性质异质性检验、时间变系数分析、函数系数分析、门槛效应检验，以及 IFE 与 TWFE 的比较。
+
+主要结果与解释已经整理在 [report/report.md](report/report.md)。如果你更希望阅读一个可浏览的网页版本，可以继续查看本 Quarto Book。
+
+# 快速导航
+
+- [数据与样本](chapters/01_data.qmd)
+- [模型设定](chapters/02_models.qmd)
+- [结果展示](chapters/03_results.qmd)
+- [结论与说明](chapters/04_conclusion.qmd)
+
+# 使用说明
+
+本书的图形与表格来自 [output/](output/) 目录中的已生成结果。若需要重新生成，请先运行 [do_files/exP03_analysis.do](do_files/exP03_analysis.do)，再执行 `quarto render`。
